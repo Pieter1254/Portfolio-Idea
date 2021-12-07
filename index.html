@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pieter Portfolio</title>
+
+      <!--============ Style Sheet ============-->
+    <link rel="stylesheet" href="css/style.css">
+
+     <!--============ Remix Icons ============-->
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+      <!--============ jQeury Link============-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <header class="header" id="header">
+        <nav class="nav container">
+            <!-- <img src="img/PortfolioLogo.png" alt="Name in image form" class="logo">  -->
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link">About</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#skill" class="nav_link">Skills</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#contact" class="nav_link">Contact</a>
+                    </li>
+                </ul>
+
+                <i class="ri-close-line nav_close" id="nav-close"></i>
+            </div>
+
+            <div class="nav_toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+
+        </nav>
+    </header>
+
+    <section class="container work-container ">
+        <h1 class="work-title" data-tilt>Hi, I'm Pieter. I'm a Junior Designer/ Front-End Developer. Living in Vredendal, South Africa</h1>
+    </section>
+
+    <section class="about-container" id="about">
+
+        <div class="about-left">
+            <img src="img/TwitchProfilePic.png" alt="" class="about-img">
+        </div>
+
+        <div class="about-right">
+            <h1 class="about-title">About</h1>
+            <p class="about-description">Worked as a Designer/Front-End Developer with experience developing Responsive Websites. 
+                Professional experience in JavaScript, HTML, CSS and Wordpress. My main goal is to learn and improve my skills. 
+                I always look to add value to the team/company I'm working for. If you want to get in touch or work on something together my contact information is below.</p>
+        </div>
+            
+    </section>
+
+    <section class="skill-container container" id="skill">
+
+        <h1 class="skill-title">Skills</h1>
+
+        <div class="skill-list">
+            <span>HTML</span>
+            <div class="skill-bar">
+                <div class="skills html">70%</div>
+            </div>
+        </div>
+        
+        <div class="skill-list">
+            <span>CSS</span>
+            <div class="skill-bar">
+                <div class="skills css">60%</div>
+            </div>
+        </div>
+        
+        <div class="skill-list">
+            <span>JavaScript</span>
+            <div class="skill-bar">
+                <div class="skills js">50%</div>
+            </div>
+        </div>
+
+        <div class="skill-list">
+            <span>Wordpress</span>
+            <div class="skill-bar">
+                <div class="skills wordpress">50%</div>
+            </div>
+        </div>
+
+        <div class="skill-list">
+            <span>Google Figma</span>
+            <div class="skill-bar">
+                <div class="skills wordpress">50%</div>
+            </div>
+        </div>
+        
+        <div class="skill-list">
+            <span>PHP</span>
+            <div class="skill-bar">
+                <div class="skills php">35%</div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="container contact-container" id="contact">
+        
+        <!--==================== Left Side of contact====================-->
+        <div class="contact-data-left">
+            <div class="contact-header">
+                <h1 class="contact-title">Do you have any Questions?</h1>
+            </div>
+            
+                <ul>
+                    <li class="contact-item">
+                        <i class="ri-map-pin-2-line"></i>
+                        <a href="https://www.google.com/maps/place/Vredendal,+8160/@-31.6513267,18.4862792,13z/data=!3m1!4b1!4m5!3m4!1s0x1c3161a1c39b0e75:0x2548c061465728e5!8m2!3d-31.6391218!4d18.5285072" 
+                        target="_blank" class="contact-link"> 
+                            Address: <br> Vredendal, Western Cape, South Africa</a>
+                    </li>
+                    <li class="contact-item">
+                        <i class="ri-phone-line"></i>
+                        <a href="" class="contact-link"> Call Us: <br>+2779 491 2938</a>
+                    </li>
+                    <li class="contact-item">
+                        <i class="ri-mail-line"></i>
+                        <a href="mailto:Contact@newson.io" class="contact-link">Email Us: <br> pschreuder11@gmail.com</a>
+                    </li>
+                </ul>
+        </div>
+
+         <!--==================== Right Side of Contact Container ====================-->
+        <div class="contact-data-right">
+            <div class="contact-header">
+                <h1 class="contact-title">Send Me a Message</h1>
+            </div>
+
+            <div class="contact-data-right">
+                <div class="contact-form">
+                    <form action="contact.php" method="POST" class="form">
+
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="fname" name="name"  required><br>
+
+                        <label for="email">Email:</label><br>
+                        <input type="text" id="email" name="email" required><br> 
+
+                        <label for="subject">Subject:</label><br>
+                        <input type="text" id="subject" name="subject" required><br>
+
+                        <label for="message">Message:</label><br>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea> <br>
+
+                        <input type="button" value="Send Message" id="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--============ SCROLL REVEAL ============-->
+    <script src="js/scrollreveal.min.js"></script>
+
+    <!--============ Main JS Script ============-->
+    <script src="js/main.js"></script>
+
+    <!--============ jqeury Tilt Script ============-->
+    <script src="js/tilt.jqeury.js"></script>
+
+    <script>
+        $('.work-title').tilt({
+            reset: false,
+        });
+    </script>
+</body>
+</html>
